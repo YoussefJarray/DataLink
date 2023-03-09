@@ -20,33 +20,33 @@
             <a class="cta" href="#"><button class="navbtn">Contact Us</button></a>
         </div>
         <script type="text/javascript">
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        // Get the navbar
-        var navbar = document.getElementById("navbar");
-        var logo = document.getElementById("titlelogo");
-        var navlinks = document.getElementsByName("navlinks");
-
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.scrollY > 0) {
-                navbar.classList.add("sticky");
-                logo.classList.add("stickylinks");
-                for (var i = 0; i < navlinks.length; i++) {
-                    navlinks[i].classList.add("stickylinks");
-                }
-            } else {
-                navbar.classList.remove("sticky");
-                logo.classList.remove("stickylinks");
-                for (var i = 0; i < navlinks.length; i++) {
-                    navlinks[i].classList.remove("stickylinks");
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+        
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+            var logo = document.getElementById("titlelogo");
+            var navlinks = document.getElementsByName("navlinks");
+        
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+        
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.scrollY > 0) {
+                    navbar.classList.add("sticky");
+                    logo.classList.add("stickylinks");
+                    for (var i = 0; i < navlinks.length; i++) {
+                        navlinks[i].classList.add("stickylinks");
+                    }
+                } else {
+                    navbar.classList.remove("sticky");
+                    logo.classList.remove("stickylinks");
+                    for (var i = 0; i < navlinks.length; i++) {
+                        navlinks[i].classList.remove("stickylinks");
+                    }
                 }
             }
-        }
         </script>
     </header>
     <div class="home">
@@ -72,6 +72,39 @@
                 <div class="cardInfo"><h1 class="cardInfoTitle">500TB+</h1><p class="cardInfoDesc">Processed</p></div>
             </div>
         </div>
+        <div class="advertisement">
+            <h1 class="adHeader" id="infoTitle">Loved by <span class="infoTextGradient">developers. Trusted</span> by Organisations</h1>
+            <div class="smallAdCards">
+                <div class="adTextContainer">
+                    <h1 id="adTitle1">Reliability when needed</h1>
+                    <p id="">Whether it’s one connector or hundreds, DataLink invests in more than just uptime. Our platform works at the speed and consistency you need, no matter the scale.</p>
+                    <button class="adButton">Read more about how we stress test our Products</button>
+                </div>
+                <div class="adImgContainer">
+                    <img class="adImg1" src="images/ad1.svg" alt="animation">
+                </div>
+            </div>
+            <div class="smallAdCards">
+                <div class="adImgContainer">
+                    <img style="width:80%;height:auto" class="adImg1" src="images/ad2.webp" alt="animation">
+                </div>
+                <div class="adTextContainer">
+                    <h1 id="adTitle1">Protecting data movement</h1>
+                    <p id="">DataLink is designed around three core industry-recognized data protection principles: system availability, processing integrity, and data confidentiality.</p>
+                    <button class="adButton">Learn more here</button>
+                </div>
+            </div>
+            <div class="smallAdCards">
+                <div class="adTextContainer">
+                    <h1 id="adTitle1">Enterprise-level Tech-Support</h1>
+                    <p id="">With an impressive average response rate of <strong>15 minutes or less</strong> and a <strong>Customer Satisfaction score of 95/100</strong>, our team is ready to support your data integration journey all over the world.</p>
+                    <button class="adButton">Read more about how we stress test our Products</button>
+                </div>
+                <div class="adImgContainer">
+                    <img style="width:80%;height:auto;" class="adImg1" src="images/ad3.png" alt="animation">
+                </div>
+            </div>
+        </div>
     </div>
     
     <div class="home2">
@@ -86,8 +119,31 @@
         >
         <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
     </svg>
-    <div>
-        
+    <div class="socialsContainer">
+        <div name="github" class="SocialCard">
+            <div class="socialImg">
+                <img class="socialsLogo" src="images/github.png" alt="logo">
+            </div>
+            <h1 class="socialTitle">Contribute!</h1>
+            <p id="socialText">our team is dedicated to answering every pull request on GitHub, we update our repositories daily, allowing data teams to focus on building the best product possible.</p>
+            <button class="socialButton">Get Started</button>
+        </div>
+        <div name="github" class="SocialCard">
+            <div class="socialImg">
+                <img class="socialsLogo" src="images/discord.png" alt="logo">
+            </div>
+            <h1 class="socialTitle">Join our Community</h1>
+            <p id="socialText">Join our discord for the latest updates on our new projects! Members are answering questions and sharing tips daily.</p>
+            <button class="socialButton">Join Discord</button>
+        </div>
+        <div name="github" class="SocialCard">
+            <div class="socialImg">
+                <img class="socialsLogo" src="images/eye.png" alt="logo">
+            </div>
+            <h1 class="socialTitle">Get a peek at what's coming</h1>
+            <p id="socialText">Our roadmap is published quarterly and open for feedback! Upvote or downvote items, or write to our product team with feature requests.</p>
+            <button class="socialButton">Get Started</button>
+        </div>
     </div>
     <div class="FooterInfo">
         <div class="FooterInfoText">

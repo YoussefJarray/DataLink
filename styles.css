@@ -25,6 +25,7 @@ p {
     justify-content: end;
     padding: 30px 15%;
     transition: all 0.8s ease 0s;
+    z-index: 3;
 }
 
 .logoholder {
@@ -134,6 +135,7 @@ p {
 
 
 .home {
+    margin-top: 110px;
     padding: 10px 15%;
     height: auto;
     display: flex;
@@ -141,6 +143,7 @@ p {
 }
 
 .home2 {
+    margin-top: 110px;
     padding: 10px 15%;
     height: auto;
     display: flex;
@@ -149,6 +152,9 @@ p {
 }
 
 .homeInfo {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -175,7 +181,8 @@ p {
 }
 
 .dataImg {
-    max-width: 700px;
+    width: 100%;
+    height: auto;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 0px;
@@ -268,7 +275,61 @@ p {
 .cardInfoDesc {
     color: white;
 }
- 
+
+.advertisement {
+    margin: auto;
+    justify-content: center;
+}
+
+.adHeader {
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+.smallAdCards {
+    padding:  2% 2% 2% 2%;;
+    display: flex;
+    flex-direction: row;
+}
+
+#adTitle1 {
+    text-align: left;
+}
+
+#adDesc1 {
+    text-align: left;
+}
+
+
+.adTextContainer{
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+    width: 50%;
+    float: left;
+}
+
+.adImgContainer {
+    width: 50%;
+    float: right;
+}
+
+.adButton {
+    margin-left: 0px;
+    margin-top: 30px;
+    padding: 9px 25px;
+    color: #1A194D;
+    background-color: transparent;
+    border: solid 1px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.adButton:hover {
+    text-decoration: underline;
+}
 .curve {
     margin-top: -110px;
     fill: #1A194D;
@@ -276,6 +337,7 @@ p {
     width: 100%;
     position: absolute;
     left: 0;
+    z-index: 1;
 }
 
 .FooterInfoText {
@@ -285,4 +347,61 @@ p {
 
 #FooterInfoText {
     color: white;
+}
+
+.socialsContainer {
+    margin: 10% 0 10% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SocialCard {
+    margin: 0 auto auto auto;
+    padding:  2% 2% 2% 2%;;
+    border-radius: 20px;
+    height: auto;
+    width: 400px;
+}
+
+.socialImg {
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    box-shadow:  0 0 10px rgba(255, 255, 255, 0.089);
+    border-radius: 20px;
+}
+
+.socialsLogo {
+    margin: auto ;
+    fill: white;
+    height: 100%;
+    width: 100%;
+}
+
+.socialTitle {
+    color: white;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#socialText {
+    padding: 10% 0 5%;
+    color: white;
+}
+
+.socialButton {
+    padding: 9px 25px;
+    color: #FFF;
+    background-color: transparent;
+    border: solid 1px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.socialButton:hover {
+    text-decoration: underline;
 }
