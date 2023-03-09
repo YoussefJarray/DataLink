@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>DataLink</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logoholder">
+                <img class="imglogo" src="images/logo_color.png" alt="logo"><p class="titlelogo">DataLink</p>
+            </div>
+            <nav>
+                <ul class="nav_links">
+                    <li class="navl"><a class="nava" href="#">Services</a></li>
+                    <li class="navl"><a class="nava" href="#">Pricing</a></li>
+                    <li class="navl"><a class="nava" href="#">About</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#"><button class="navbtn">Contact</button></a>
+        </div>
+        <script type="text/javascript">
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+    
+        </script>
+    </header>
+    <div class="home">
+        <div id="homeInfo">
+            <div class="infoText">
+                <h1 id="infoTitle">All your data<br><span class="infoTextGradient">in one place.</span></h1>
+                <p>Open-Source, Automated, Fully scalable data solution.<br>Link your applications with ease</p>
+                <div class="emailField">
+                    <input class="infoTextEmail" type="text" id="email" name="email" placeholder="Enter your E-mail here!"><br>
+                    <button class="navbtn">Try DataLink free</button>
+                </div>
+            </div>
+            <div class="infoImg">
+                <img class="dataImg" src="images/data.png" alt="logo">
+            </div>
+        </div>
+        <div class="cardsHolder">
+            <div class="card"></div>
+        </div>
+    </div>
+</body>
+</html>
